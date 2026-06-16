@@ -185,6 +185,7 @@
         <h3>${plan.name}</h3>
         <p>${plan.description}</p>
         <div class="price"><strong>${plan.price}</strong><span>${plan.unit}</span></div>
+        ${plan.detail ? `<p class="price-detail">${plan.detail}</p>` : ""}
         <ul>${plan.features.map((feature) => `<li>${feature}</li>`).join("")}</ul>
       `;
       grid.append(item);

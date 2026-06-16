@@ -533,11 +533,16 @@ img {
 }
 
 .price span,
+.price-detail,
 .pricing-note,
 .form-note {
   color: var(--muted);
   font-size: 14px;
   line-height: 1.8;
+}
+
+.price-detail {
+  margin: -12px 0 22px;
 }
 
 .pricing-note {
