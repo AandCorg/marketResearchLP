@@ -23,13 +23,12 @@ window.LP_CONFIG = {
   navigation: [
     { label: "課題", href: "#problem" },
     { label: "解決策", href: "#solution" },
-    { label: "機能", href: "#features" },
     { label: "料金", href: "#pricing" },
     { label: "FAQ", href: "#faq" },
   ],
   cta: {
     primary: { label: "導入相談する", href: "#contact" },
-    secondary: { label: "資料の構成を見る", href: "#features" },
+    secondary: { label: "資料の構成を見る", href: "#solution" },
     login: { label: "ログイン", href: "#" },
   },
   hero: {
@@ -80,68 +79,42 @@ window.LP_CONFIG = {
   },
   solution: {
     eyebrow: "Solution",
-    title: "企業一覧を、次のアクションにつなげる",
+    title: "課題に対応した解決手段",
     lead:
-      "市場調査AIは、検索したい条件に沿って企業名とURLを整理し、営業先の確認や協業候補の検討に使いやすい形で出力します。",
-    steps: [
-      {
-        label: "Select",
-        title: "カテゴリーを選択",
-        text:
-          "ブラウザ上のChat AI画面で、調査したい業界や用途に近いカテゴリーを選びます。",
-      },
-      {
-        label: "Prompt",
-        title: "検索内容を入力",
-        text:
-          "探したい企業の条件をプロンプトとして入力し、候補企業の抽出条件を具体化します。",
-      },
-      {
-        label: "Output",
-        title: "企業名とURLを出力",
-        text:
-          "検索実行後、企業名とURLの一覧を確認し、CSV出力で他サービスや業務にもつなげられます。",
-      },
-    ],
-  },
-  features: {
-    eyebrow: "Features",
-    title: "できること",
-    lead:
-      "プロンプトに応じた企業一覧を、営業先整理や協業検討に使いやすいアウトプットとして届けます。",
+      "Current painで挙げた調査の詰まりどころに対して、現場で使いやすい出力と操作性で解決手段を提供します。",
     items: [
       {
-        title: "企業一覧の出力",
+        title: "一覧化にかかる手間を減らす",
         text:
           "入力した条件に応じて、候補企業の企業名とURLを一覧で出力します。",
         bullets: ["企業名", "URL", "候補企業一覧"],
       },
       {
-        title: "プロンプトに応じた検索",
+        title: "欲しい条件で候補を探せる",
         text:
           "業界、用途、提供サービスなど、ユーザーが入力した検索内容に沿って候補を整理します。",
         bullets: ["業界条件", "用途条件", "自由入力"],
       },
       {
-        title: "CSV出力",
+        title: "他業務へ連携しやすい",
         text:
           "企業一覧をCSVとして出力し、他サービスや社内業務へ連携できます。",
         bullets: ["CSVダウンロード", "外部連携", "社内共有"],
       },
       {
-        title: "簡単な操作",
+        title: "迷わず操作できる",
         text:
           "カテゴリー選択、検索内容の入力、検索実行の3ステップで結果を確認できます。",
         bullets: ["カテゴリー選択", "プロンプト入力", "検索実行"],
       },
       {
-        title: "営業先整理への活用",
+        title: "営業先整理に使いやすい",
         text:
           "出力した企業一覧をもとに、営業先候補の確認やリスト整備を進められます。",
         bullets: ["候補確認", "リスト整備", "社内共有"],
       },
       {
-        title: "協業候補の探索",
+        title: "協業候補の探索に使える",
         text:
           "自社サービスや企画と相性がありそうな企業を探し、協業検討の入口として使えます。",
         bullets: ["協業先候補", "関連企業探索", "初期調査"],
@@ -195,31 +168,31 @@ window.LP_CONFIG = {
     eyebrow: "Pricing",
     title: "料金プラン",
     lead:
-      "正式な料金は、利用頻度や出力件数、連携範囲を確認したうえでご案内します。",
+      "利用回数や連携範囲に応じて選べる料金プランを用意しています。",
     note:
-      "月額上限付きプランまたは従量課金など、運用状況を確認しながら最適な料金体系を検討しています。",
+      "詳細な利用条件や導入支援の範囲は、お問い合わせ時にご案内します。",
     plans: [
       {
         name: "PoC",
-        price: "個別相談",
+        price: "無料",
         unit: "",
-        description: "小規模な検証向け",
+        description: "上限20回",
         features: ["企業一覧出力", "CSV出力", "利用条件の確認"],
       },
       {
         name: "Standard",
-        price: "個別相談",
+        price: "2000円",
         unit: "",
-        description: "継続利用を検討する方向け",
+        description: "月100回",
         features: ["カテゴリー活用", "企業一覧管理", "社内業務連携"],
         highlighted: true,
       },
       {
-        name: "Business",
-        price: "個別相談",
+        name: "Unlimited",
+        price: "要相談",
         unit: "",
-        description: "外部サービス連携を含めて使う方向け",
-        features: ["CSV連携", "運用相談", "利用範囲の調整"],
+        description: "独自のrag環境を構築したい方向け",
+        features: ["独自DBの構築", "運用相談", "外部連携"],
       },
     ],
   },

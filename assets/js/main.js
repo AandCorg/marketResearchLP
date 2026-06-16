@@ -132,33 +132,15 @@
     setText("[data-solution-lead]", config.solution.lead);
 
     const target = document.querySelector("[data-solution-steps]");
-    config.solution.steps.forEach((step) => {
-      const item = document.createElement("article");
-      item.className = "solution-step";
-      item.innerHTML = `
-        <span>${step.label}</span>
-        <h3>${step.title}</h3>
-        <p>${step.text}</p>
+    config.solution.items.forEach((solutionItem) => {
+      const card = document.createElement("article");
+      card.className = "feature-card solution-card";
+      card.innerHTML = `
+        <h3>${solutionItem.title}</h3>
+        <p>${solutionItem.text}</p>
+        <ul>${solutionItem.bullets.map((bullet) => `<li>${bullet}</li>`).join("")}</ul>
       `;
-      target.append(item);
-    });
-  };
-
-  const renderFeatures = () => {
-    setText("[data-feature-eyebrow]", config.features.eyebrow);
-    setText("[data-feature-title]", config.features.title);
-    setText("[data-feature-lead]", config.features.lead);
-
-    const grid = document.querySelector("[data-features]");
-    config.features.items.forEach((feature) => {
-      const item = document.createElement("article");
-      item.className = "feature-card";
-      item.innerHTML = `
-        <h3>${feature.title}</h3>
-        <p>${feature.text}</p>
-        <ul>${feature.bullets.map((bullet) => `<li>${bullet}</li>`).join("")}</ul>
-      `;
-      grid.append(item);
+      target.append(card);
     });
   };
 
@@ -281,7 +263,6 @@
     renderHero();
     renderProblems();
     renderSolution();
-    renderFeatures();
     renderWorkflow();
     renderUseCases();
     renderPricing();
