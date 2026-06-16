@@ -251,7 +251,6 @@ window.LP_CONFIG = {
     description:
       "市場調査AIは、企業名とURLの一覧出力で営業先整理や協業候補の検討を支援するサービスです。",
     links: [
-      { label: "GitHub", href: "https://github.com/AandCorg/marketResearch" },
       { label: "お問い合わせ", href: "#contact" },
       { label: "ログイン", href: "#" },
     ],
