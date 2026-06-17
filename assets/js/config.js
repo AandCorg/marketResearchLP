@@ -182,7 +182,7 @@ window.LP_CONFIG = {
       },
       {
         name: "Standard",
-        price: "2000円",
+        price: "準備中",
         unit: "",
         description: "継続的にサービスを利用したい方",
         detail: "月あたり100回まで",
