@@ -191,9 +191,10 @@ window.LP_CONFIG = {
       },
       {
         name: "Unlimited",
-        price: "要相談",
+        price: "個別対応",
         unit: "",
         description: "独自のrag環境を構築したい方",
+        detail: "お問い合わせください",
         features: ["独自DBの構築", "運用相談", "外部連携"],
       },
     ],
